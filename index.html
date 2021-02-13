@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Веб-студия RL-Art">
+	<meta name="keywords" content="Сайт на заказ, html, css, js, интернет-магазин, одностраничник, landing page, купить сайт, заказать сайт, сайт, заказ, веб-разработка">
+	<meta name="author" content="RL-Art">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<title>RL-Art</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />  
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/media1366.css">
+	<link rel="stylesheet" href="assets/css/media1024.css">
+	<link rel="stylesheet" href="assets/css/media768.css">
+	<link rel="stylesheet" href="assets/css/media421.css">
+	<link rel="stylesheet" href="assets/css/media420.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+</head>
+<body>
+<!-- Главная -->
+	<header>
+		<video autoplay muted loop class="header_video" src="assets/vid/bg.mp4"></video>
+			<div class="header_top">
+				<img src="assets/img/logo.png" alt="">
+				<button type="button" class="btn-callback" data-toggle="modal" data-target="#header_modal">Оставить заявку</button>
+				<div class="header_modal modal fade hide" id="header_modal" tabindex="-1" aria-labelledby="header_modal_label" aria-hidden="true">
+ 					<div class="header_modal_dialog modal-dialog">
+  						<div class="header_modal_content modal-content">
+     						<div class="header_modal_header modal-header">
+       							<h5 class="header_modal_header_title modal-title" id="header_modal_label">Обратная связь</h5>
+      						</div>
+      						<div class="header_modal_body modal-body">
+        						<div id="header_modal_body_form">
+	    							<form action="#" method="post" autocomplete="off">
+	        							<div class="header_modal_form_body">
+	           								<input type="text" name="name" class="header_modal_form_body_name name" placeholder="Имя">
+	            							<input type="text" name="phone" class="header_modal_form_body_phone phone" placeholder="Контактный телефон">
+	            							<input type="text" name="email" class="header_modal_form_body_email email" placeholder="E-mail">
+	            							<textarea name="text" class="header_modal_form_body_textarea text" cols="15" rows="4"></textarea>
+	            							<p>Нажимая на кнопку Отправить, я даю свое<br>согласие на <a href=""><u>обработку персональных данных.</u></a></p>
+	            							<input class="header_modal_form_body_button" type="submit" id="send" value="Отправить">
+	            							<div class="header_form_answer"></div>
+	        							</div>
+	    							</form>
+	    							<a href="#" class="header_modal_body_form_close"></a>
+								</div>
+      						</div>
+    					</div>
+  					</div>
+				</div>
+			</div>
+			<div class="header_body">
+				<div class="header_menu_wrap">
+					<div class="header_menu_line"></div>
+					<div class="header_menu" id="header_menu">
+					<ul>
+						<li>
+							<a href="#info">О нас</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="#services">Услуги</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="#projects">Проекты</a>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="#contact">Контакты</a>
+						</li>
+					</ul>
+					</div>
+				</div>
+				<div class="header_text">
+					<h1>RL-Studio - веб-студия дизайна, разработки и<br>продвижения сайтов. Мы создаем продающие<br>проекты и ведем полную поддержку на<br>выгодных условиях.</h1>
+					<div class="header_text_line"></div>
+					<div class="header_text_mobile">
+						<div class="header_text_below">
+							<p>- При заказе нам<br>потребуется не больше<br>часа на обсуждение<br>проекта с вами.<br>- И 5-10 мин. каждый<br>день на внесение правок.</p>
+							<p>Сами ведем анализ<br>рынка и предлагаем<br>аргументированные<br>решения для<br>будущего проекта с<br>конверсией до 50%</p>
+							<div class="header_text_below_button_wrap">
+								<div class="header_text_below_ellipse"></div>
+								<button type="button" class="header_text_button"><a href="#services"><font color="#060606">Уз</font>нать стоимость</a></button>
+								<div class="header_text_below_line"></div>
+							</div>
+						</div>
+						<div class="header_icons_mobile">
+							<a href=""><img src="assets/img/behance.png" alt=""></a>
+							<a href=""><img src="assets/img/telegram.png" alt=""></a>
+							<a href=""><img src="assets/img/whatsapp.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+				<div class="header_icons">
+					<a href=""><img src="assets/img/behance.png" alt=""></a>
+					<a href=""><img src="assets/img/telegram.png" alt=""></a>
+					<a href=""><img src="assets/img/whatsapp.png" alt=""></a>
+				</div>
+			</div>
+	</header>
+<!-- О нас -->
+	<section class="info" id="info">
+		<div class="container">
+			<div class="info_header">
+				<div class="info_header_pre-line"></div>
+				<div class="info_section_title">
+					<div class="info_section_title_block">
+						<p>О НАС</p>
+					</div>
+					<div class="info_section_title_border">
+					</div>
+				</div>
+				<div class="info_header_post-line"></div>
+			</div>
+			<div class="info_body">
+				<div class="info_body_title">
+					<p>Наш результат - ваша победа</p>
+				</div>
+				<div class="info_body_cards_wrap">
+					<div class="info_body_cards">
+						<div class="info_body_card">
+							<h2>14</h2>
+							<div class="info_body_card_text">
+								<h3>Успешно завершенных<br>проектов.</h3>
+								<p>Решения, которые работают<br>и приносят прибыль<br>каждый день.</p>
+							</div>
+						</div>
+						<div class="info_body_card">
+							<h2>32%</h2>
+							<div class="info_body_card_text">
+								<h3>Общая конверсия наших<br>проектов.</h3>
+								<p>Мы растем с каждым нашим<br>проектом и всегда нацелены на<br>максимальную<br>заинтересованность клиента.</p>
+							</div>							
+						</div>
+					</div>
+					<div class="info_body_cards">
+						<div class="info_body_card">
+							<h2>00</h2>
+							<div class="info_body_card_text">
+								<h3>Плохих отзывов о<br>нашей работе.</h3>
+								<p>Все мы люди. К счастью,<br>мы достаточно профессиональны,<br>чтобы договоренность приносила<br>клиенту только выгоду.</p>
+							</div>
+						</div>
+						<div class="info_body_card">
+							<h2>85%</h2>
+							<div class="info_body_card_text">
+								<h3>Сокращение расходов<br>при сотрудничестве.</h3>
+								<p>Мы заинтересованы в<br>прибыльности вашего бизнеса.<br>Ведь наш успех напрямую<br>зависит от вашего.</p>
+							</div>							
+						</div>
+					</div>
+				</div>
+				<div class="info_body_button_wrap">
+					<div class="info_body_ellipse"></div>
+					<button type="button" class="info_body_button" data-toggle="modal" data-target="#info_modal"><font color="#060606">По</font>дробнее о компании</button>
+					<div class="info_body_line"></div>
+				</div>
+					<div class="info_modal modal fade" id="info_modal" tabindex="-1" aria-labelledby="info_modal_label" aria-hidden="true">
+ 					<div class="info_modal_dialog modal-dialog">
+  						<div class="info_modal_content modal-content">
+      						<div class="info_modal_body modal-body">
+	    							<div class="info_modal_text_left">
+	    								<h4>О НАС</h4>
+	    								<p>   Мы молодая <u>web-студия</u>, где каждый<br>вкладывает в проект все свои знания и<br>опыт, для достижения поистине<br>потрясающего результата.<br>
+ 										   Обеспечить первокласный дизайн ручной<br>верстки и получить максимум от проекта -<br>это то что нужно вам и вашим клиентам!<br>
+										   Мы учитываем любые мелочи вашей<br>специализации, чтобы отразить их в нашей<br>работе и поднять ваш бизнес на новую<br>ступень развития!<br>
+										   Мы специализируемся на сдержанном, но<br>креативном стиле, у нас найдется идея для<br>любого, даже самого специфичного дела.<br> 
+										   Попробуйте! Это того стоит!</p>
+	    							</div>
+	    							<div class="info_modal_text_right">
+	    								<h4>СВЯЗАТЬСЯ С НАМИ</h4>
+	    								<div class="info_modal_text_right_contacts">
+	    									<img src="assets/img/mailicon.svg" alt="">
+	    									<a href="mailto: leonfury95@gmail.com"><u>info@rl-art.ru</u></a>
+	    								</div>
+	    								<div class="info_modal_text_right_contacts">
+	    									<img src="assets/img/phoneicon.svg" alt="">
+	    									<a href="tel:+79999999999"><u>+7 999 999-99-99</u></a>
+	    								</div>
+	    								<p>Работаем с 9:00 до 20:00<br>ежедневно</p>
+										<div class="info_modal_body_button_wrap">
+											<div class="info_modal_body_ellipse"></div>
+											<button type="button" class="info_modal_body_button"><a href="assets/dl" download="test.txt"><font color="#060606">По</font>смотреть договор</a></button>
+											<div class="info_modal_body_line"></div>
+										</div>
+	    							</div>
+	    							<a href="#" class="header_modal_body_form_close"></a>
+      						</div>
+    					</div>
+  					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- Услуги -->
+	<section class="services" id="services">
+		<div class="container">
+			<div class="services_header">
+				<div class="services_header_pre-line"></div>
+				<div class="services_section_title">
+					<div class="services_section_title_block">
+						<p>НАШИ УСЛУГИ</p>
+					</div>
+					<div class="services_section_title_border">
+					</div>
+				</div>
+				<div class="services_header_post-line"></div>
+			</div>
+			<div class="mobile_services_header">
+				<p>НАШИ УСЛУГИ</p>
+			</div>
+			<div id="services_gallery" class="carousel slide services_gallery" data-interval="false">
+				<div class="services_gallery_controls">
+					<ul class="carousel-indicators">
+						<li data-target="#services_gallery" data-slide-to="0" class="active">Одностраничник</li>
+						<li data-target="#services_gallery" data-slide-to="1">Сайт для бизнеса</li>
+						<li data-target="#services_gallery" data-slide-to="2">Интернет-магазин</li>
+						<li data-target="#services_gallery" data-slide-to="3">Сайт-портал</li>
+					</ul>
+					<div class="services_gallery_controls_line"></div>
+				</div>
+				<div class="carousel-inner services_slides">
+					<div class="services_slide carousel-item active">
+						<div class="services_gallery_text">
+							<h1>LANDING PAGE - РЕШЕНИЕ ДЛЯ БЫСТРОГО СТАРТА</h1>
+							<span>ЧТО ВЫ ПОЛУЧИТЕ:</span>
+							<ul>
+								<li>
+									<div class="services_gallery_text_ellipse"></div>
+									<p>Продающий дизайн страницы</p>
+								</li>
+								<li>
+									<div class="services_gallery_text_ellipse"></div>
+									<p>Построение воронки продаж</p>
+								</li>
+								<li>
+									<div class="services_gallery_text_ellipse"></div>
+									<p>Сайт, полностью подготовленный<br>под контекстную рекламу</p>
+								</li>
+								<li>
+									<div class="services_gallery_text_ellipse"></div>
+									<p>Быстрый приток новых клиентов</p>
+								</li>
+							</ul>
+								<button type="button" class="btn-services" data-toggle="modal" data-target="#services_modal">ЗАКАЗАТЬ LANDING PAGE<div class="services_gallery_button_border"></div></button>
+						</div>
+						<img src="assets/img/order1.png" alt="">
+					</div>
+					<div class="services_slide carousel-item">
+						<div class="services_gallery_text">
+							<h1>МНОГОСТРАНИЧНЫЙ САЙТ ДЛЯ БИЗНЕСА</h1>
+							<span>ЧТО ВЫ ПОЛУЧИТЕ:</span>
+							<ul>
+								<li>
+									<div class="services_gallery_text_ellipse"></div>
+									<p>Фирменный дизайн</p>
+								</li>
+								<li>
+									<div class="services_gallery_text_ellipse"></div>
+									<p>Достойное представительство вашей<br>компании в интернете</p>
+								</li>
+								<li>
+									<div class="services_gallery_text_ellipse"></div>
+									<p>Эффективный инструмент для продаж</p>
+								</li>
+								<li>
+									<div class="services_gallery_text_ellipse"></div>
+									<p>Увеличение прибыли для вашего бизнеса</p>
+								</li>
+							</ul>
+								<button type="button" class="btn-services" data-toggle="modal" data-target="#services_modal">ЗАКАЗАТЬ САЙТ ДЛЯ БИЗНЕСА
+								<div class="services_gallery_button_border"></div></button>
+						</div>
+						<img src="assets/img/order2.png" alt="">
+					</div>
+					<div class="services_slide carousel-item">
+						<div class="services_gallery_text">
+							<h1>ОНЛАЙН-МАГАЗИН ВАШИХ ТОВАРОВ И УСЛУГ</h1>
+							<span>ЧТО ВЫ ПОЛУЧИТЕ:</span>
+							<ul>
+								<li>
+									<div class="services_gallery_text_ellipse"></div>
+									<p>Продающий дизайн</p>
+								</li>
+								<li>
+									<div class="services_gallery_text_ellipse"></div>
+									<p>Удобный каталог товаров и услуг</p>
+								</li>
+								<li>
+									<div class="services_gallery_text_ellipse"></div>
+									<p>Интеграция с системами приема платежей онлайн</p>
+								</li>
+								<li>
+									<div class="services_gallery_text_ellipse"></div>
+									<p>Простое управление ассортиментом, заказами,<br>клиентами, скидками</p>
+								</li>
+							</ul>
+								<button type="button" class="btn-services" data-toggle="modal" data-target="#services_modal">ЗАКАЗАТЬ ИНТЕРНЕТ-МАГАЗИН<div class="services_gallery_button_border"></div></button>
+						</div>
+						<img src="assets/img/order3.png" alt="">
+					</div>
+					<div class="services_slide carousel-item">
+						<div class="services_gallery_text">
+							<h1>САЙТ С ИНДИВИДУАЛЬНЫМ ФУНКЦИОНАЛОМ</h1>
+							<span>ЧТО ВЫ ПОЛУЧИТЕ:</span>
+							<ul>
+								<li>
+									<div class="services_gallery_text_ellipse"></div>
+									<p>Любое решение</p>
+								</li>
+								<li>
+									<div class="services_gallery_text_ellipse"></div>
+									<p>Любой сложности</p>
+								</li>
+								<li>
+									<div class="services_gallery_text_ellipse"></div>
+									<p>Под любые задачи</p>
+								</li>
+								<li>
+									<div class="services_gallery_text_ellipse"></div>
+									<p>Широкий выбор функционала</p>
+								</li>
+							</ul>
+								<button type="button" class="btn-services" data-toggle="modal" data-target="#services_modal">ЗАКАЗАТЬ ИНД. РЕШЕНИЕ<div class="services_gallery_button_border"></div></button>
+						</div>
+						<img src="assets/img/order4.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="services_mobile">
+				<div class="services_mobile_slides">
+					<div class="services_mobile_slide">
+						<h4>Одностраничник - LANDING PAGE</h4>
+						<img src="assets/img/ordermobile1.png" alt="">
+						<a href="#mobile_form" class="mobile-btn-services">Оформить</a>
+					</div>
+					<div class="services_mobile_slide">
+						<h4>Многостраничник</h4>
+						<img src="assets/img/ordermobile2.png" alt="">
+						<a href="#mobile_form" class="mobile-btn-services">Оформить</a>
+					</div>
+					<div class="services_mobile_slide">
+						<h4>Интернет-магазин</h4>
+						<img src="assets/img/ordermobile3.png" alt="">
+						<a href="#mobile_form" class="mobile-btn-services">Оформить</a>
+					</div>
+					<div class="services_mobile_slide">
+						<h4>Индивидуальное решение</h4>
+						<img src="assets/img/ordermobile4.png" alt="">
+						<a href="#mobile_form" class="mobile-btn-services">Оформить</a>
+					</div>
+				</div>
+			</div>
+			<div class="services_modal modal fade" id="services_modal" tabindex="-1" aria-labelledby="services_modal_label" aria-hidden="true">
+ 					<div class="services_modal_dialog modal-dialog">
+  						<div class="services_modal_content modal-content">
+     						<div class="services_modal_header modal-header">
+       							<h5 class="services_modal_header_title modal-title" id="services_modal_label">Обратная связь</h5>
+      						</div>
+      						<div class="services_modal_body modal-body">
+        						<div id="services_modal_body_form">
+	    							<form action="#" method="post" autocomplete="off">
+	        							<div class="services_modal_form_body">
+	           								<input type="text" name="name" class="services_modal_form_body_name name" placeholder="Имя">
+	            							<input type="text" name="phone" class="services_modal_form_body_phone phone" placeholder="Контактный телефон">
+	            							<input type="text" name="email" class="services_modal_form_body_email email" placeholder="E-mail">
+	            							<div class="services_modal_select">
+	            								<select name="select" id="services_modal_select">
+	            									<option value="1">Одностраничник</option>
+	            									<option value="2">Сайт для бизнеса</option>
+	            									<option value="3">Интернет-магазин</option>
+	            									<option value="4">Индивидуальное решение</option>
+	            								</select>
+	            							</div>
+	            							<div class="services_modal_thanks">
+	            								<span>Отличный выбор!<br>
+												Мы рады, что вы ознакомились с<br>нашими услугами. Мы понимаем<br>ваши пожелания и скоро с вами<br> свяжемся :)</span>
+												<div class="services_modal_thanks_line"></div>
+	            							</div>
+	            							<p>Нажимая на кнопку Отправить, я даю свое<br>согласие на <a href=""><u>обработку персональных данных.</u></a></p>
+	            							<input class="services_modal_form_body_button" type="submit" id="services_send" value="Отправить">
+	            							<div class="services_form_answer"></div>
+	        							</div>
+	    							</form>
+	    							<a href="#" class="header_modal_body_form_close"></a>
+								</div>
+      						</div>
+    					</div>
+  					</div>
+				</div>
+			</div>
+	</section>
+
+<!-- Проекты/портфолио -->
+
+	<section id="projects" class="projects">
+		<div class="container">
+			<div class="projects_header">
+				<div class="projects_header_pre-line"></div>
+				<div class="projects_section_title">
+					<div class="projects_section_title_block">
+						<p>НАШИ ПРОЕКТЫ</p>
+					</div>
+					<div class="projects_section_title_border">
+					</div>
+				</div>
+				<div class="projects_header_post-line"></div>
+			</div>
+			<div class="projects_header_text">
+				<p>Разбираемся за неделю даже в самой сложной сфере.</p>
+			</div>
+			<div id="projects_slider" class="carousel slide project_slider" data-interval="false">
+				<div id="projects_controls">
+				<ul class="projects_controls_inner carousel-indicators">
+					<li class="project_controls_btn active" data-target="#projects_slider" data-slide-to="0">
+						PS Jumgo
+					</li>
+					<li class="project_controls_btn" data-target="#projects_slider" data-slide-to="1">
+						Raelis
+					</li>
+					<li class="project_controls_btn" data-target="#projects_slider" data-slide-to="2">
+						GS FURNITURE
+					</li>
+					<li class="project_controls_btn" data-target="#projects_slider" data-slide-to="3">
+						VR STATION
+					</li>
+					<li class="project_controls_btn" data-target="#projects_slider" data-slide-to="4">
+						MR KRAVCHENKO
+					</li>
+				</ul>
+				</div>
+				<div class="carousel-inner project_slides">
+    				<div class="project_slide carousel-item active">
+    					<img src="assets/img/portfolio1.png" alt="">
+    					<h6>О проекте:</h6>
+    					<p>Проект был создан для московской фотостудии Jumga в качестве пилотного<br>решения.</p>
+    				</div>
+    				<div class="project_slide carousel-item">
+    					<img src="assets/img/portfolio2.png" alt="">
+    					<h6>О проекте:</h6>
+    					<p>Минималистичная концепция для дизайн студии Raelis с утонченной<br>палитрой цвета и лаконичным подходом к информированию.</p>
+    				</div>
+    				<div class="project_slide carousel-item">
+    					<img src="assets/img/portfolio3.png" alt="">
+    					<h6>О проекте:</h6>
+    					<p>Общий концепт интернет магазина скандинавской фурнитуры без<br>реализации. Смелые решения в строгих рамках.</p>
+    				</div>
+    				<div class="project_slide carousel-item">
+    					<img src="assets/img/portfolio4.png" alt="">
+    					<h6>О проекте:</h6>
+    					<p>Landing page для VR оборудования с использованием кислотных цветов и<br>абстрактных форм. Также входит в раздел концепций.</p>
+    				</div>
+    				<div class="project_slide carousel-item">
+    					<img src="assets/img/portfolio5.png" alt="">
+    					<h6>О проекте:</h6>
+    					<p>Оформления блога девушки, которая хочет поделиться своими<br>впечатлениями о путешествиях. Реализован ряд соц. элементов. Концепт.</p>
+    				</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- Процесс создания сайтов -->
+
+	<section id="process" class="process">
+		<div class="container">
+			<div class="process_header">
+				<div class="process_header_pre-line"></div>
+				<div class="process_section_title">
+					<div class="process_section_title_block">
+						<p>КАК ПРОИСХОДИТ СОЗДАНИЕ САЙТОВ</p>
+					</div>
+					<div class="process_section_title_border">
+					</div>
+				</div>
+				<div class="process_header_post-line"></div>
+			</div>
+			<div id="process_slider" class="carousel slide">
+				<div id="process_controls">
+				<ul class="process_controls_inner carousel-indicators">
+					<li class="active" data-target="#process_slider" data-slide-to="0">
+						1. ПЕРВЫЙ КОНТАКТ
+					</li>
+					<li data-target="#process_slider" data-slide-to="1">
+						2. АНАЛИТИКА
+					</li>
+					<li data-target="#process_slider" data-slide-to="2">
+						3. ПРОТОТИПИРОВАНИЕ
+					</li>
+					<li data-target="#process_slider" data-slide-to="3">
+						4. ДИЗАЙН
+					</li>
+					<li data-target="#process_slider" data-slide-to="4">
+						5. РАЗРАБОТКА
+					</li>
+					<li data-target="#process_slider" data-slide-to="5">
+						6. СТАРТ ПРОЕКТА
+					</li>
+				</ul>
+				</div>
+				<div class="process_slides carousel-inner">
+    				<div class="process_slide carousel-item active">
+    					<div class="process_slide_text">
+    						<p class="process_slide_text_header">1. ПЕРВЫЙ КОНТАКТ</p>
+    						<ul>
+    							<li>
+    								<div class="process_slide_ellipse"></div>
+    								<p>Вы рассказываете о своем проекте.</p>
+    							</li>
+    							<li>
+    								<div class="process_slide_ellipse"></div>
+    								<p>Совместно определяем задачи сайта и<br>обсуждаем план их решения.</p>
+    							</li>
+    							<li>
+    								<div class="process_slide_ellipse"></div>
+    								<p>Обсуждаем бюджет проекта.</p>
+    							</li>
+    						</ul>
+    					</div>
+    					<img src="assets/img/process1.png" alt="">
+    				</div>
+    				<div class="process_slide carousel-item">
+    					<div class="process_slide_text">
+    						<p class="process_slide_text_header">2. АНАЛИТИКА</p>
+    						<p class="process_slide_text_sub">Чтобы предложить вам лучшее решение, мы:</p>
+    						<ul>
+    							<li>
+    								<div class="process_slide_ellipse"></div>
+    								<p>Анализируем ваших конкурентов и успешные решения на рынке.</p>
+    							</li>
+    							<li>
+    								<div class="process_slide_ellipse"></div>
+    								<p>Изучаем ваши предложения, ассортимент и деятельность в целом.</p>
+    							</li>
+    							<li>
+    								<div class="process_slide_ellipse"></div>
+    								<p>Составляем план того, как будет работать и выглядеть будущий сайт.</p>
+    							</li>
+    						</ul>
+    					</div>
+    					<img src="assets/img/process2.png" alt="">
+    				</div>
+    				<div class="process_slide carousel-item">
+    					<div class="process_slide_text">
+    						<p class="process_slide_text_header">3. ПРОТОТИПИРОВАНИЕ</p>
+    						<p class="process_slide_text_2">
+    							Готовим прототипы, чтобы Вы<br>могли визуально оценить внешний<br>вид основных страниц сайта.<br>
+    							<br>
+    							<i>Прототипом</i> страницы сайта мы называем<br>эскиз (обычно в стиле mockup), на котором<br>схематично отображены все элементы<br>будущей страницы.<br>
+    							<br>
+    							Прототип легко исправить и дополнить,<br>чтобы прийти к единой концепции<br>внешней структуры сайта до того, как<br>начнется работа по вополощению<br>дизайна.
+    						</p>
+    					</div>
+    					<img src="assets/img/process3.png" alt="">
+    				</div>
+    				<div class="process_slide carousel-item">
+    					<div class="process_slide_text">
+    						<p class="process_slide_text_header">4. ДИЗАЙН</p>
+    						<p class="process_slide_text_2">Готовим полноценный дизайн с<br>учетом фирменного стиля, шрифтов и<br>цветов. Продумываем удобный и<br>понятный интферфейс.<br>
+    						<br>
+    						Для вас дизайн в цвете - это наиболее<br>наглядный и окончательный эскиз будущего<br>сайта.<br>
+							Для нас - это наиболее простое и прозрачное<br>задание по созданию внешнего вида.</p>
+    					</div>
+    					<img src="assets/img/process4.png" alt="">
+    				</div>
+    				<div class="process_slide carousel-item">
+    					<div class="process_slide_text">
+    						<p class="process_slide_text_header">5. РАЗРАБОТКА</p>
+    						<p class="process_slide_text_sub">Выполняется верстка сайта, программирование его компонентов и их настройка.</p>
+    						<ul>
+    							<li>
+    								<div class="process_slide_ellipse"></div>
+    								<p>Настройка системы управления сайтом (CMS).</p>
+    							</li>
+    							<li>
+    								<div class="process_slide_ellipse"></div>
+    								<p>Адаптивная верстка для удобного<br>отображения на мобильных устройствах.</p>
+    							</li>
+    							<li>
+    								<div class="process_slide_ellipse"></div>
+    								<p>Программирование функционала сайта.</p>
+    							</li>
+    							<li>
+    								<div class="process_slide_ellipse"></div>
+    								<p>Конфигурация безопасности сайта.</p>
+    							</li>
+    						</ul>
+    					</div>
+    					<img src="assets/img/process5.png" alt="">
+    				</div>
+    				<div class="process_slide carousel-item">
+    					<div class="process_slide_text">
+    						<p class="process_slide_text_header">6. СТАРТ ПРОЕКТА</p>
+    						<p class="process_slide_text_sub">После утверждения и согласования<br>разработанного сайта, выполняем<br>"финальные штрихи":</p>
+    						<ul>
+    							<li>
+    								<div class="process_slide_ellipse"></div>
+    								<p>Перенос сайта на "боевой" хостинг</p>
+    							</li>
+    							<li>
+    								<div class="process_slide_ellipse"></div>
+    								<p>Подключение домена</p>
+    							</li>
+    							<li>
+    								<div class="process_slide_ellipse"></div>
+    								<p>Настройка систем аналитики</p>
+    							</li>
+    							<li>
+    								<div class="process_slide_ellipse"></div>
+    								<p>Сайт готов!</p>
+    							</li>
+    						</ul>
+    					</div>
+    					<img src="assets/img/process6.png" alt="">
+    				</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- Обслуживание сайтов -->
+
+	<section id="maintenance" class="maintenance">
+		<div class="container">
+			<div class="maintenance_header">
+				<div class="maintenance_header_pre-line"></div>
+				<div class="maintenance_section_title">
+					<div class="maintenance_section_title_block">
+						<p>ОБСЛУЖИВАНИЕ САЙТОВ</p>
+					</div>
+					<div class="maintenance_section_title_border">
+					</div>
+				</div>
+				<div class="maintenance_header_post-line"></div>
+			</div>
+			<div class="maintenance_main">
+			<div class="maintenance_text_wrap">
+				<p class="maintenance_text_header">ПОСЛЕ СОЗДАНИЯ САЙТА МЫ БУДЕМ РЯДОМ! -</p>
+				<p class="maintenance_text_sub">И мы готовы взять на себя следующие задачи:</p>
+				<ul>
+					<li>
+						<div class="maintenance_text_ellipse"></div>
+						<p>Работа с содержанием сайта. Добавление и<br>обновление информации, товаров, услуг и<br>т.д.</p>
+					</li>
+					<li>
+						<div class="maintenance_text_ellipse"></div>
+						<p>Обеспечение бесперебойной работы сайта.</p>
+					</li>
+					<li>
+						<div class="maintenance_text_ellipse"></div>
+						<p>Резервное копирование и восстановление в<br>случае сбоев. Антивирусная безопасность и<br>защита от взломов.</p>
+					</li>
+					<li>
+						<div class="maintenance_text_ellipse"></div>
+						<p>Анализ статистики посещаемости.<br>Консультации и помощь в развитии сайта.</p>
+					</li>
+				</ul>
+				<div class="maintenance_btn_wrap">
+					<button type="button" class="maintenance_btn" data-container="body" data-toggle="popover" data-placement="right" data-content="Наша команда готова взять на всю работу над проектом, начиная от поддержания работы продукта - до дополнительной проработки контента и продвижения самого проекта.">БЕСПЛАТНЫЙ АУДИТ<div class="maintenance_btn_border"></div></button>
+					<div class="maintenance_btn_line"></div>
+					<p>Нужно ли мне<br>обслуживание сайта?</p>
+				</div>
+			</div>
+			<img src="assets/img/superman.png" alt="">
+			</div>
+		</div>
+	</section>
+
+<!-- Контактная форма -->
+
+	<section id="contact" class="contact">
+			<div class="contact_header">
+				<div class="contact_header_pre-line"></div>
+				<div class="contact_section_title">
+					<div class="contact_section_title_block">
+						<p>Напишите нам!</p>
+					</div>
+					<div class="contact_section_title_border">
+					</div>
+				</div>
+				<div class="contact_header_post-line"></div>
+			</div>
+			<div class="contact_main" id="contact_main">
+				<div class="contact_text">
+					<p>Работаем с клиентами на любом<br>уровне.
+					Вам для задачи не нужен опыт -<br>только желание.</p>
+				</div>
+				<form action="#" method="post" autocomplete="off">
+		        	<div class="contact_main_form">
+		           		<input type="text" name="name" class="contact_form_input name" placeholder="Ваше имя">
+		           		<input type="text" name="email" class="contact_form_input email" placeholder="E-mail">
+		            	<input type="text" name="phone" class="contact_form_input phone" placeholder="+7 ... ...-..-..">
+		            	<div class="contact_btn">
+		            	<input class="contact_form_button" type="submit" id="contact_send" value="">
+		            	<img class="img-svg contact_icon" src="assets/img/formbtn_icon.svg" alt="">
+		            	</div>
+		            	<div class="contact_form_answer"></div>
+		        	</div>
+		    	</form>
+		    </div>
+		    <div class="contact_img">
+		    	<img class="img-svg contact_lamp" src="assets/img/formlamp.png">
+		    	</img>
+		    </div>
+	</section>
+
+<!-- Контакты/Мобильная версия -->
+
+	<section class="mobile_contacts">
+		<div class="mobile_contacts_info">
+	    	<h2>СВЯЗАТЬСЯ С НАМИ</h2>
+	    	<div class="mobile_contact_wrap">
+		    	<div class="mobile_contact">
+		    		<img src="assets/img/mailicon.svg" alt="">
+		    		<a href="mailto: leonfury95@gmail.com"><u>info@rl-art.ru</u></a>
+		    	</div>
+		    	<div class="mobile_contact">
+		    		<img src="assets/img/phoneicon.svg" alt="">
+		    		<a href="tel:+79999999999"><u>+7 999 999-99-99</u></a>
+		    	</div>
+		    </div>
+	    		<p>Работаем с 9:00 до 20:00<br>ежедневно</p>
+			<div class="info_modal_body_button_wrap">
+				<div class="info_modal_body_ellipse"></div>
+					<button type="button" class="info_modal_body_button"><a href="assets/dl" download="test.txt"><font color="#060606">По</font>смотреть договор</a></button>
+				<div class="info_modal_body_line"></div>
+			</div>
+			<div class="mobile_contacts_footer">
+				<span>Больше информации на полной версии сайта!</span>
+				<p>Copyright © 2019-2021 г.  все права защищены</p>
+			</div>
+		</div>
+	</section>
+
+<!-- Форма/Мобильная версия -->
+
+	<section class="mobile_form" id="mobile_form">
+		<h3>Обратная связь</h3>
+		<form action="#" method="post" autocomplete="off">
+	        <div class="header_modal_form_body">
+	           	<input type="text" name="name" class="header_modal_form_body_name name" placeholder="Имя">
+	            <input type="text" name="phone" class="header_modal_form_body_phone phone" placeholder="Контактный телефон">
+	            <input type="text" name="email" class="header_modal_form_body_email email" placeholder="E-mail">
+	            <textarea name="text" class="header_modal_form_body_textarea text" cols="15" rows="4"></textarea>
+	            <p>Нажимая на кнопку Отправить, я даю свое<br>согласие на <a href=""><u>обработку персональных данных.</u></a></p>
+	           	<input class="header_modal_form_body_button" type="submit" id="send" value="Отправить">
+	            <div class="header_form_answer"></div>
+	        </div>
+	    </form>
+	</section>
+
+<!-- Scripts -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/jquery.malihu.PageScroll2id.js"></script>
+  <script src="assets/js/scripts.js"></script>
+
+</body>
+</html>
