@@ -16,18 +16,18 @@ body {
 
 @media screen and (min-width: 1920px) {
   .my-container {
-    width: 1920px; } }
+    width: 1920px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; } }
 
 @media screen and (min-width: 1921px) {
   section {
     align-items: center; } }
 
 section {
-  margin-top: 60px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: space-evenly; }
+  flex-direction: column; }
 
 button,
 button:active,
@@ -282,6 +282,7 @@ header {
   flex-direction: row;
   color: #E1DDDD;
   font-size: 20px;
+  margin-top: 10px;
   text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25); }
 
 /*Кнопка с кружком и линией*/
@@ -362,13 +363,19 @@ header {
 .header_icons a {
   padding: 30px 0; }
 
+.header_icons a:hover {
+  opacity: .7; }
+
 .header_icons_mobile {
   display: none; }
 
 /*О нас*/
 .info {
   width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .info_header {
   display: flex;
@@ -414,8 +421,7 @@ header {
 .info_body {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  margin-top: 100px; }
+  flex-direction: column; }
 
 .info_body_cards_wrap {
   display: flex;
@@ -737,7 +743,8 @@ h4 {
 .services_gallery {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  height: 900px; }
 
 .services_slide {
   margin-top: 59px;
@@ -956,7 +963,7 @@ option {
   padding-top: 10px; }
 
 .projects_header_text {
-  margin-top: 100px;
+  margin-top: 20px;
   margin-right: 280px;
   margin-bottom: 20px; }
 
@@ -1202,8 +1209,7 @@ h6 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 100px; }
+  align-items: center; }
 
 .maintenance_text_wrap {
   margin-left: 40px; }
@@ -1324,6 +1330,7 @@ h6 {
   padding-top: 10px; }
 
 .contact_main {
+  margin-top: 82px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1417,13 +1424,13 @@ h6 {
   display: none; }
 
 @media screen and (min-width: 1366px) and (max-width: 1919px) {
+  .my-container {
+    width: 1360px; }
   .popover {
     max-width: 800px;
     font-size: 20px; }
   .popover-body {
     padding: 20px 10px; }
-  section {
-    margin-top: 60px; }
   /*Главная*/
   .header_icons_mobile {
     display: none; }
@@ -1440,7 +1447,8 @@ h6 {
     font-size: 30px; }
   .header_text_below {
     font-size: 15px;
-    width: 800px; }
+    width: 800px;
+    margin-top: 10px; }
   /*О нас*/
   .info_header_pre-line, .info_header_post-line {
     width: 450px; }
@@ -1502,7 +1510,7 @@ h6 {
     width: 351px;
     height: 55px; }
   .projects_header_text {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-right: 180px; }
   .projects_header_text p {
     font-size: 22px; }
@@ -1600,14 +1608,14 @@ h6 {
   .mobile_form {
     display: none; } }
 
-@media screen and (min-width: 1024px) and (max-width: 1366px) {
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+  .my-container {
+    width: 1020px; }
   .popover {
     max-width: 400px;
     font-size: 15px; }
   .popover-body {
     padding: 10px 5px; }
-  section {
-    margin-top: 60px; }
   /*Главная*/
   .header_icons_mobile {
     display: none; }
@@ -1624,7 +1632,8 @@ h6 {
     font-size: 20px; }
   .header_text_below {
     font-size: 14px;
-    width: 600px; }
+    width: 600px;
+    margin-top: 10px; }
   .header_top button {
     width: 243px;
     height: 62px; }
@@ -1697,7 +1706,7 @@ h6 {
     width: 351px;
     height: 55px; }
   .projects_header_text {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-right: 100px; }
   .projects_header_text p {
     font-size: 18px; }
@@ -1805,6 +1814,11 @@ h6 {
     display: none; } }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .my-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
   .popover {
     max-width: 400px;
     font-size: 15px; }
@@ -2013,6 +2027,11 @@ h6 {
     margin-bottom: 60px; } }
 
 @media screen and (max-width: 767px) {
+  .my-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
   .popover {
     max-width: 400px;
     font-size: 15px; }
@@ -2261,6 +2280,11 @@ h6 {
     margin-bottom: 60px; } }
 
 @media screen and (max-width: 420px) {
+  .my-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
   /*Главная*/
   .header_modal_form_body input, textarea {
     width: 250px; }

@@ -31,6 +31,9 @@ body {
 @media screen and (min-width: 1920px) {
 	.my-container {
 		width: 1920px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
 	}
 }
 
@@ -41,7 +44,6 @@ body {
 }
 
 section {
-	margin-top: 10px;
 	@include flex;
 }
 
@@ -341,6 +343,7 @@ header {
 	flex-direction: row;
 	color: #E1DDDD;
 	font-size: 20px;
+	margin-top: 10px;
 	text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
 }
 
@@ -435,6 +438,10 @@ header {
 	padding: 30px 0;
 }
 
+.header_icons a:hover {
+	opacity: .7;
+}
+
 .header_icons_mobile {display: none;}
 
 /*О нас*/
@@ -442,6 +449,9 @@ header {
 .info {
 	width: 100vw;
 	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .info_header {
@@ -493,7 +503,6 @@ header {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	margin-top: 100px;
 }
 
 .info_body_cards_wrap {
@@ -870,6 +879,7 @@ h4 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	height: 900px;
 }
 
 .services_slide {
@@ -1126,7 +1136,7 @@ option {
 }
 
 .projects_header_text {
-	margin-top: 100px;
+	margin-top: 20px;
 	margin-right: 280px;
 	margin-bottom: 20px;
 }
@@ -1416,7 +1426,6 @@ h6 {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	margin-top: 100px;
 }
 
 .maintenance_text_wrap {
@@ -1670,6 +1679,10 @@ h6 {
 
 @media screen and (min-width: 1366px) and (max-width: 1919px) {
 	
+	.my-container {
+		width: 1360px;
+	}
+
 	.popover {
 		max-width: 800px;
 		font-size: 20px;
@@ -1677,10 +1690,6 @@ h6 {
 
 	.popover-body {
 		padding: 20px 10px;
-	}
-
-	section {
-		margin-top: 60px;
 	}
 
 	/*Главная*/
@@ -1711,6 +1720,7 @@ h6 {
 	.header_text_below {
 		font-size: 15px;
 		width: 800px;
+		margin-top: 10px;
 	}
 
 	/*О нас*/
@@ -1819,7 +1829,7 @@ h6 {
 	}
 
 	.projects_header_text {
-		margin-top: 10px;
+		margin-top: 20px;
 		margin-right: 180px;
 	}
 
@@ -1993,8 +2003,12 @@ h6 {
 
 // Media 1024
 
-@media screen and (min-width: 1024px) and (max-width: 1366px) {
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
 	
+	.my-container {
+		width: 1020px;
+	}
+
 	.popover {
 		max-width: 400px;
 		font-size: 15px;
@@ -2004,9 +2018,6 @@ h6 {
 		padding: 10px 5px;
 	}
 
-	section {
-		margin-top: 60px;
-	}
 
 	/*Главная*/
 
@@ -2036,6 +2047,7 @@ h6 {
 	.header_text_below {
 		font-size: 14px;
 		width: 600px;
+		margin-top: 10px;
 	}
 
 	.header_top button {
@@ -2163,7 +2175,7 @@ h6 {
 	}
 
 	.projects_header_text {
-		margin-top: 10px;
+		margin-top: 20px;
 		margin-right: 100px;
 	}
 
@@ -2352,6 +2364,13 @@ h6 {
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 	
+	.my-container {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
 	.popover {
 		max-width: 400px;
 		font-size: 15px;
@@ -2656,7 +2675,13 @@ h6 {
 
 // Media 421
 @media screen and (max-width: 767px) {
-	
+	.my-container {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
 	.popover {
 		max-width: 400px;
 		font-size: 15px;
@@ -3019,6 +3044,12 @@ h6 {
 // Media 420-
 
 @media screen and (max-width: 420px) {
+	.my-container {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 
 	/*Главная*/
 	

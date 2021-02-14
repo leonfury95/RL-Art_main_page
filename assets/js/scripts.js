@@ -96,3 +96,9 @@ $("#contact_send").click(function(){
     })
 
 });
+
+// wow.js
+if ($(window).width() <= 1023){ 
+  $(".wow").removeClass("wow");
+  }
+new WOW({ mobile:false }).init();

@@ -9,6 +9,7 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="manifest" href="/site.webmanifest">
 	<title>RL-Art</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />  
@@ -21,8 +22,8 @@
 	<header>
 		<video autoplay muted loop class="header_video" src="assets/vid/bg.mp4"></video>
 			<div class="header_top">
-				<img src="assets/img/logo.png" alt="">
-				<button type="button" class="btn-callback" data-toggle="modal" data-target="#header_modal">Оставить заявку</button>
+				<img class="wow fadeInLeftBig" data-wow-delay="2s" src="assets/img/logo.png" alt="">
+				<button type="button" class="btn-callback wow fadeInRightBig" data-wow-delay="2s" data-toggle="modal" data-target="#header_modal">Оставить заявку</button>
 				<div class="header_modal modal fade hide" id="header_modal" tabindex="-1" aria-labelledby="header_modal_label" aria-hidden="true">
  					<div class="header_modal_dialog modal-dialog">
   						<div class="header_modal_content modal-content">
@@ -50,7 +51,7 @@
 				</div>
 			</div>
 			<div class="header_body">
-				<div class="header_menu_wrap">
+				<div class="header_menu_wrap wow fadeInLeftBig" data-wow-delay="2s">
 					<div class="header_menu_line"></div>
 					<div class="header_menu" id="header_menu">
 					<ul>
@@ -75,7 +76,7 @@
 					</ul>
 					</div>
 				</div>
-				<div class="header_text">
+				<div class="header_text wow fadeInUp" data-wow-delay="2s">
 					<h1>RL-Studio - веб-студия дизайна, разработки и<br>продвижения сайтов. Мы создаем продающие<br>проекты и ведем полную поддержку на<br>выгодных условиях.</h1>
 					<div class="header_text_line"></div>
 					<div class="header_text_mobile">
@@ -95,7 +96,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="header_icons">
+				<div class="header_icons wow fadeInRightBig" data-wow-delay="2s">
 					<a href="https://www.behance.net/RamzesX" target="_blank"><img src="assets/img/behance.png" alt=""></a>
 					<a href="" target="_blank"><img src="assets/img/telegram.png" alt=""></a>
 					<a href="" target="_blank"><img src="assets/img/whatsapp.png" alt=""></a>
@@ -121,7 +122,7 @@
 					<p>Наш результат - ваша победа</p>
 				</div>
 				<div class="info_body_cards_wrap">
-					<div class="info_body_cards">
+					<div class="info_body_cards wow fadeInLeftBig">
 						<div class="info_body_card">
 							<h2>14</h2>
 							<div class="info_body_card_text">
@@ -137,7 +138,7 @@
 							</div>							
 						</div>
 					</div>
-					<div class="info_body_cards">
+					<div class="info_body_cards wow fadeInRightBig">
 						<div class="info_body_card">
 							<h2>00</h2>
 							<div class="info_body_card_text">
@@ -154,7 +155,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="info_body_button_wrap">
+				<div class="info_body_button_wrap wow fadeInUp">
 					<div class="info_body_ellipse"></div>
 					<button type="button" class="info_body_button" data-toggle="modal" data-target="#info_modal"><font color="#060606">По</font>дробнее о компании</button>
 					<div class="info_body_line"></div>
@@ -213,7 +214,7 @@
 				<p>НАШИ УСЛУГИ</p>
 			</div>
 		<div class="my-container">
-			<div id="services_gallery" class="carousel slide services_gallery" data-interval="false">
+			<div id="services_gallery" class="carousel slide services_gallery wow fadeInUpBig" data-interval="false">
 				<div class="services_gallery_controls">
 					<ul class="carousel-indicators">
 						<li data-target="#services_gallery" data-slide-to="0" class="active">Одностраничник</li>
@@ -410,11 +411,11 @@
 				<div class="projects_header_post-line"></div>
 			</div>	
 		<div class="my-container">
-			<div class="projects_header_text">
+			<div class="projects_header_text wow fadeInRightBig">
 				<p>Разбираемся за неделю даже в самой сложной сфере.</p>
 			</div>
 			<div id="projects_slider" class="carousel slide project_slider" data-interval="false">
-				<div id="projects_controls">
+				<div id="projects_controls" class="wow fadeInLeftBig">
 				<ul class="projects_controls_inner carousel-indicators">
 					<li class="project_controls_btn active" data-target="#projects_slider" data-slide-to="0">
 						PS Jumgo
@@ -433,7 +434,7 @@
 					</li>
 				</ul>
 				</div>
-				<div class="carousel-inner project_slides">
+				<div class="carousel-inner project_slides wow fadeInRightBig">
     				<div class="project_slide carousel-item active">
     					<img src="assets/img/portfolio1.png" alt="">
     					<h6>О проекте:</h6>
@@ -480,7 +481,7 @@
 			</div>
 		<div class="my-container">
 			<div id="process_slider" class="carousel slide">
-				<div id="process_controls">
+				<div id="process_controls" class="wow fadeInLeftBig">
 				<ul class="process_controls_inner carousel-indicators">
 					<li class="active" data-target="#process_slider" data-slide-to="0">
 						1. ПЕРВЫЙ КОНТАКТ
@@ -502,7 +503,7 @@
 					</li>
 				</ul>
 				</div>
-				<div class="process_slides carousel-inner">
+				<div class="process_slides carousel-inner wow fadeInRightBig">
     				<div class="process_slide carousel-item active">
     					<div class="process_slide_text">
     						<p class="process_slide_text_header">1. ПЕРВЫЙ КОНТАКТ</p>
@@ -638,7 +639,7 @@
 			</div>
 		<div class="my-container">
 			<div class="maintenance_main">
-			<div class="maintenance_text_wrap">
+			<div class="maintenance_text_wrap wow fadeInLeftBig">
 				<p class="maintenance_text_header">ПОСЛЕ СОЗДАНИЯ САЙТА МЫ БУДЕМ РЯДОМ! -</p>
 				<p class="maintenance_text_sub">И мы готовы взять на себя следующие задачи:</p>
 				<ul>
@@ -659,13 +660,13 @@
 						<p>Анализ статистики посещаемости.<br>Консультации и помощь в развитии сайта.</p>
 					</li>
 				</ul>
-				<div class="maintenance_btn_wrap">
+				<div class="maintenance_btn_wrap wow fadeInUpBig">
 					<button type="button" class="maintenance_btn" data-container="body" data-toggle="popover" data-placement="right" data-content="Наша команда готова взять на всю работу над проектом, начиная от поддержания работы продукта - до дополнительной проработки контента и продвижения самого проекта.">БЕСПЛАТНЫЙ АУДИТ<div class="maintenance_btn_border"></div></button>
 					<div class="maintenance_btn_line"></div>
 					<p>Нужно ли мне<br>обслуживание сайта?</p>
 				</div>
 			</div>
-			<img src="assets/img/superman.png" alt="">
+			<img class="wow fadeInRightBig" src="assets/img/superman.png" alt="">
 			</div>
 		</div>
 	</section>
@@ -686,12 +687,12 @@
 			</div>
 		<div class="my-container">
 			<div class="contact_main" id="contact_main">
-				<div class="contact_text">
+				<div class="contact_text wow fadeInLeftBig">
 					<p>Работаем с клиентами на любом<br>уровне.
 					Вам для задачи не нужен опыт -<br>только желание.</p>
 				</div>
 				<form action="#" method="post" autocomplete="off">
-		        	<div class="contact_main_form">
+		        	<div class="contact_main_form wow fadeInRightBig">
 		           		<input type="text" name="name" class="contact_form_input name" placeholder="Ваше имя">
 		           		<input type="text" name="email" class="contact_form_input email" placeholder="E-mail">
 		            	<input type="text" name="phone" class="contact_form_input phone" placeholder="+7 ... ...-..-..">
@@ -703,7 +704,7 @@
 		        	</div>
 		    	</form>
 		    </div>
-		    <div class="contact_img">
+		    <div class="contact_img wow fadeInUp">
 		    	<img class="img-svg contact_lamp" src="assets/img/formlamp.png">
 		    	</img>
 		    </div>
